@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: kind-voting-project
+  name: voting-app
   namespace: argocd
 spec:
   description: A project for the kind-voting-app
@@ -10,7 +10,7 @@ spec:
     - 'https://github.com/Shouryabisht24/kind-voting-app'
   
   destinations:
-    - namespace: kind-voting-app
+    - namespace: voting-app
       server: https://kubernetes.default.svc
 
   clusterResourceWhitelist:    # Which cluster-wide resources are allowed (e.g., CRDs)
