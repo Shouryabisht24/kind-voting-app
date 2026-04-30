@@ -10,7 +10,7 @@ spec:
   source: 
     repoURL: https://github.com/Shouryabisht24/kind-voting-app
     targetRevision: main
-    path: ArgoCD/applications
+    path: k8s-specifications
 
   destination:
     server: https://kubernetes.default.svc
